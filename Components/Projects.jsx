@@ -12,7 +12,7 @@ const Projects = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://personalwebsite-backend-ebb7hmwqq.vercel.app/api/get");
+      const response = await axios.get("https://personalwebsite-backend.vercel.app/api/get");
       setProjectData(response.data);
     } catch (error) {
       console.log(error);
