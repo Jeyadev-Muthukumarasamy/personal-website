@@ -9,5 +9,7 @@ export default defineConfig({
         secure: false,       // For self-signed certificates
       },
     },
+    {
+     plugins: [react()],
   },
 });
