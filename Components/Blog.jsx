@@ -12,7 +12,7 @@ const Blog = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/getBlog');
+      const response = await axios.get('https://personalwebsite-backend.vercel.app/api/getBlog');
       setBlogData(response.data); // Assuming the response is an array of blogs
     } catch (error) {
       console.log(error);
