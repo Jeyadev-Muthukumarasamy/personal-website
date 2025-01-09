@@ -31,7 +31,7 @@ const Home = () => {
             className="text-green-600 hover:text-green-800 font-serif text-xl flex items-center space-x-2"
           >
             <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
-            <span>+91 7010483940</span>
+            <span>Phone</span>
           </a>
 
           <a 
@@ -39,7 +39,7 @@ const Home = () => {
             className="text-red-700 hover:text-red-900 font-serif text-xl flex items-center space-x-2"
           >
             <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
-            <span>jeydevm27@gmail.com</span>
+            <span>Mail</span>
           </a>
         </div>
 
