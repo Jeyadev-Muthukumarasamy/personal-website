@@ -12,7 +12,7 @@ const Blog = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get ('https://personalwebsite-backend.vercel.app/api/getBlog');
+      const response = await axios.get ('https://personalwebsite-backend-7qicw6h7r.vercel.app/api/getBlog');
       setBlogData(response.data); // Assuming the response is an array of blogs
     } catch (error) {
       console.log(error);
@@ -45,7 +45,7 @@ const Blog = () => {
             </div>
           ))
         ) : (
-          <p className="text-lg font-serif text-black">Will post blogs soon</p>
+          <p className="text-lg font-serif text-black">loading</p>
         )}
       </div>
 
