@@ -31,7 +31,7 @@ const Home = () => {
             className="text-green-600 hover:text-green-800 font-serif text-xl flex items-center space-x-2"
           >
             <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
-            <span>+91 7010483940</span>
+            <span>Phone</span>
           </a>
 
           <a 
@@ -39,13 +39,13 @@ const Home = () => {
             className="text-red-700 hover:text-red-900 font-serif text-xl flex items-center space-x-2"
           >
             <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
-            <span>jeydevm27@gmail.com</span>
+            <span>Mail</span>
           </a>
         </div>
 
         <div className="flex space-x-8">
           <a 
-            href="https://www.linkedin.com/in/jeyadev" 
+            href="https://www.linkedin.com/in/jeyadev27/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-600 hover:text-blue-800 font-serif text-xl flex items-center space-x-2"
@@ -54,7 +54,7 @@ const Home = () => {
             <span>LinkedIn</span>
           </a>
           <a 
-            href="https://github.com/jeydev" 
+            href="https://github.com/Jeyadev-Muthukumarasamy/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-800 hover:text-gray-600 font-serif text-xl flex items-center space-x-2"
