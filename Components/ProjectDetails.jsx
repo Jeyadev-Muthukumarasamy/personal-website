@@ -1,8 +1,8 @@
-
-
 const ProjectDetails = ({ project, onClose }) => {
   if (!project) return null;
 
+  const hasLinks = project.githublink || project.video;
+  
   return (
     <div className="fixed inset-0 bg-white bg-opacity-95 z-50 overflow-y-auto">
       <div className="max-w-3xl mx-auto py-16 px-8">
@@ -36,34 +36,37 @@ const ProjectDetails = ({ project, onClose }) => {
                 ))}
               </p>
             </div>
-
-            <div className="space-y-2">
-              {project.githublink && (
-                <a 
-                  href={project.githublink}
-                  className="block text-black hover:text-gray-600 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Repository ↗
-                </a>
-              )}
-              
-              {project.video && (
-                <a 
-                  href={project.video}
-                  className="block text-black hover:text-gray-600 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Watch Demo ↗
-                </a>
-              )}
-            </div>
+            
+            {hasLinks && (
+              <div className="space-y-2">
+                {project.githublink && (
+                  <a 
+                    href={project.githublink}
+                    className="block text-black hover:text-gray-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repository ↗
+                  </a>
+                )}
+                
+                {project.video && (
+                  <a 
+                    href={project.video}
+                    className="block text-black hover:text-gray-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Watch Demo ↗
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default ProjectDetails
+
+export default ProjectDetails;
