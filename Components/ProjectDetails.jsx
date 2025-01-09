@@ -1,7 +1,5 @@
 const ProjectDetails = ({ project, onClose }) => {
   if (!project) return null;
-
-  const hasLinks = project.githublink || project.video;
   
   return (
     <div className="fixed inset-0 bg-white bg-opacity-95 z-50 overflow-y-auto">
@@ -37,30 +35,26 @@ const ProjectDetails = ({ project, onClose }) => {
               </p>
             </div>
             
-            {hasLinks && (
-              <div className="space-y-2">
-                {project.githublink && (
-                  <a 
-                    href={project.githublink}
-                    className="block text-black hover:text-gray-600 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Repository ↗
-                  </a>
-                )}
-                
-                {project.video && (
-                  <a 
-                    href={project.video}
-                    className="block text-black hover:text-gray-600 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Watch Demo ↗
-                  </a>
-                )}
-              </div>
+            {project.githublink && (
+              <a 
+                href={project.githublink}
+                className="block text-black hover:text-gray-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Repository ↗
+              </a>
+            )}
+            
+            {project.video && (
+              <a 
+                href={project.video}
+                className="block text-black hover:text-gray-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch Demo ↗
+              </a>
             )}
           </div>
         </div>
