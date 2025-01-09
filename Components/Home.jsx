@@ -45,7 +45,7 @@ const Home = () => {
 
         <div className="flex space-x-8">
           <a 
-            href="https://www.linkedin.com/in/jeyadev" 
+            href="https://www.linkedin.com/in/jeyadev27/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-600 hover:text-blue-800 font-serif text-xl flex items-center space-x-2"
@@ -54,7 +54,7 @@ const Home = () => {
             <span>LinkedIn</span>
           </a>
           <a 
-            href="https://github.com/jeydev" 
+            href="https://github.com/Jeyadev-Muthukumarasamy/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-800 hover:text-gray-600 font-serif text-xl flex items-center space-x-2"
