@@ -8,10 +8,7 @@ const Home = () => {
     <div className="max-w-3xl mx-auto py-16 px-8 bg-white">
       <div className="space-y-12">
         <p className="font-serif text-lg leading-loose text-black">
-          During my teenage years, I was an avid gamer and enjoyed tinkering with smartphones and gadgets. 
-          This curiosity and passion for technology eventually led me to pursue a Bachelor of Engineering 
-          in Computer Science and Engineering, which I completed in 2023. While I still enjoy gaming, 
-          my focus has shifted more towards exploring the intricacies of software development and engineering.
+          During my teenage years, I was an avid gamer and enjoyed tinkering with smartphones and gadgets. This hands-on experience with technology sparked my interest in the field of software development. It eventually led me to pursue a Bachelor of Engineering in Computer Science and Engineering, which I completed in 2023. While I still enjoy gaming, my focus has shifted more towards exploring the intricacies of software development and engineering. I didn't do much coding during college, but I learned some advanced coding and development  primarily after completing college during a 1-year gap, although I did learn some basics in college.
         </p>
 
         <p className="font-serif text-lg leading-loose text-black">
