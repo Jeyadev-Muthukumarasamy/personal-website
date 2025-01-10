@@ -1,30 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+  const location = useLocation()
+  
+  const isActiveLink = (path) => {
+    return location.pathname === path ? 'text-zinc-900 font-medium' : 'text-zinc-600'
+  } 
+
   return (
-    <nav className="w-full py-6 px-4 md:px-8 border-b border-gray-100">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-        {/* Logo Section */}
-        <div className="text-center md:text-left">
-          <h3 className="text-lg font-mono tracking-tight">Jeyadev</h3>
-        </div>
-        
-        {/* Navigation Links */}
-        <div className="flex justify-center md:justify-end">
-          <ul className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm font-mono">
+    <nav className="sticky top-0 z-50 backdrop-blur-sm bg-white/80 border-b border-zinc-100">
+      <div className="max-w-3xl mx-auto px-6 md:px-8 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link 
+            to="/" 
+            className="text-lg font-mono text-zinc-900 hover:text-zinc-600 transition-colors"
+          >
+            Jeyadev
+          </Link>
+
+          {/* Navigation Links */}
+          <ul className="flex items-center gap-8">
             <li>
-              <Link to="/" className="text-red-800 hover:text-gray-600 transition-colors">
+              <Link 
+                to="/" 
+                className={`${isActiveLink('/')} font-mono text-sm text-red-700  hover:text-zinc-900 transition-colors`}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="text-red-800 hover:text-gray-600 transition-colors">
+              <Link 
+                to="/projects" 
+                className={`${isActiveLink('/projects')} font-mono text-sm text-red-700 hover:text-zinc-900 transition-colors`}
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="text-red-800 hover:text-gray-600 transition-colors">
+              <Link 
+                to="/blog" 
+                className={`${isActiveLink('/blog')} font-mono text-sm text-red-700 hover:text-zinc-900 transition-colors`}
+              >
                 Blog
               </Link>
             </li>
@@ -32,7 +50,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
